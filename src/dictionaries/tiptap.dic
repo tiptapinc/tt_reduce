@@ -1,0 +1,23 @@
+%
+1000    FollowRefer
+1001    ModifyTweet
+1002    ICYMI
+1003    CC
+1100    URL
+1200    Emoticon_Happy
+1201    Emoticon_Heart
+1202    Emoticon_Sad
+1203    Emoticon_Surprise
+1204    Emoticon_Angry
+%
+ff      1000
+followfriday   1000
+mt      1001
+icmyi   1002
+cc      1003
+xylink  1100
+xysmile 1200
+xyheart 1201
+xyfrown 1202
+xysurprise  1203
+xyangry 1204
