@@ -9,6 +9,8 @@ Read in and process the LIWC dictionary
 import pytrie
 import re
 
+from os.path import abspath, join, dirname
+
 PROX_REGEXP = r"(<[\w]+>)([0-9]*)/([0-9]*)"
 
 
@@ -18,8 +20,9 @@ class LIWCTionary(object):
         self.words = {}
         self.wilds = pytrie.StringTrie()
 
-        self._load_dict("dictionaries/LIWC2007_English100131.dic")
-        self._load_dict("dictionaries/tiptap.dic")
+        dictDir = abspath(join(dirname(__file__), "../dictionaries"))
+        self._load_dict("%s/LIWC2007_English100131.dic" % dictDir)
+        self._load_dict("%s/tiptap.dic" % dictDir)
 
     def _load_dict(self, filename):
         with open(filename) as f:
