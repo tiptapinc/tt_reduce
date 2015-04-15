@@ -77,7 +77,9 @@ class LIWCAlike(object):
         wc = float(self.counts['WC'])
 
         for name in self.counts:
-            if name == 'Parenth':
+            if wc == 0:
+                results[name] = float(0)
+            elif name == 'Parenth':
                 results[name] = float(self.counts[name]) / wc * 50
             elif name != 'WC':
                 results[name] = float(self.counts[name]) / wc * 100
