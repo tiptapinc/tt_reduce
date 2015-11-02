@@ -25,10 +25,10 @@ PUNCT_MAPPING = {
 PAREN_LIST = ['(', ')', '[', ']', '{', '}']
 
 # TOKEN_REGEXP = r"(\w+[^\s]*\w+)|(\w)"
-TOKEN_REGEXP = u"([\u0080-\uffff\w]+[^\s]*\w+)|(\w)"
-PUNCT_REGEXP = u"([^\u0080-\uffff\x00-\x1f\s\w])"
-EXTRA_DASH_REGEXP = r"(\w+-\w+)"
-NUMERAL_REGEXP = r"(^\d+[,\.]*\d+[\W]?$)|(^\d+$)"
+TOKEN_REGEXP = u"[\u0080-\uffff\w]+[^\s]*\w+|\w"
+PUNCT_REGEXP = u"[^\u0080-\uffff\x00-\x1f\s\w]"
+EXTRA_DASH_REGEXP = r"\w+-\w+"
+NUMERAL_REGEXP = r"^\d+[,\.]*\d+[\W]?$|^\d+$"
 
 TRAN_TAB = {
     ord(u'\u2013'): u'-',
