@@ -1,3 +1,7 @@
+## v0.0.4:
+
+* added support for python 3
+
 ## v0.0.3:
 * remove capturing parentheses from regexes that are used in
   tokenizing. Fixes compatibility problem with nltk 3.1
