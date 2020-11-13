@@ -17,7 +17,6 @@ setup(
     version=open('VERSION').read().strip(),
     author='TipTap',
     install_requires=['nltk', 'pytrie', 'regex'],
-    package_dir={'tt_reduce': 'src'},
     packages=['tt_reduce'],
     include_package_data=True,
     package_data={'tt_social': ['dictionaries/*', 'text/*']}
